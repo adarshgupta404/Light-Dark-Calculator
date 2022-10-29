@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ecf0f3;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: #ecf0f3;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #ffffff,
+        5px 5px 12px rgba(0, 0, 0, 0.16);
+    display: grid;
+    grid-template-columns: repeat(4, 68px);
+
+}
+
+input {
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    border-radius: 8px;
+    background-color: #ecf0f3;
+    box-shadow: inset 5px 5px 12px #ffffff,
+        5px 5px 12px rgba(0, 0, 0, 0.16);
+    border: none;
+    color: rgba(70, 70, 70);
+    font-size: 40px;
+    text-align: right;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+button {
+    height: 48px;
+    width: 48px;
+    background-color: #ecf0f3;
+    box-shadow: inset 5px 5px 12px #ffffff,
+        5px 5px 12px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.pressed {
+    color: white;
+    background-color: rgb(46, 44, 44);
+}
+
+.darkmode {
+    color: white;
+    background-color: rgb(46, 44, 44);
+    box-shadow: inset 5px 5px 12px rgb(201, 199, 199),
+        5px 5px 12px rgba(239, 238, 238, 0.16);
+}
+
+.darkbutton {
+    background-color: #2c2b2b;
+    color: white;
+    box-shadow: inset 3px 3px 10px #ffffff,
+        3px 3px 10px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.equal {
+    width: 115px;
+    border-radius: 40px;
+    box-shadow: inset 5px 5px 12px #ffffff,
+        5px 5px 12px rgba(0, 0, 0, 0.16);
+}
+
+.buttons {
+    margin: 0px auto;
+}

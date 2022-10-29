@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light/Dark Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input class="dis" id="userInput" placeholder="0">
+            <button class="clr" onclick="erase('clr')">C</button>
+            <button class="dec" onclick="press('dec')">.</button>
+            <button class="mod" onclick="press('mod')">%</button>
+            <button class="div" onclick="press('div')">÷</button>
+            <button class="7" onclick="press(7)">7</button>
+            <button class="8" onclick="press(8)">8</button>
+            <button class="9" onclick="press(9)">9</button>
+            <button class="mult" onclick="press('mult')">x</button>
+            <button class="4" onclick="press(4)">4</button>
+            <button class="5" onclick="press(5)">5</button>
+            <button class="6" onclick="press(6)">6</button>
+            <button class="minus" style="font-size: 20px;" onclick="press('minus')">−</button>
+            <button class="3" onclick="press(3)">3</button>
+            <button class="2" onclick="press(2)">2</button>
+            <button class="1" onclick="press(1)">1</button>
+            <button class="plus" onclick="press('plus')">+</button>
+            <button style="font-size: 14px;"id="del" onclick="del('del')">DEL</button>
+            <button class="0" onclick="press(0)">0</button>
+            <button class="equal e" onclick="equal()">=</button>
+        </div>
+        <div class="buttons">
+            <div class="btn btn-dark btn-lg btn-outline-light" onclick="darkmode()">Dark Mode</div>
+            <div class="btn btn-light btn-lg btn-outline-dark" onclick="lightmode()">Light Mode</div>
+        </div>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
